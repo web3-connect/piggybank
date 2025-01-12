@@ -1069,7 +1069,7 @@ async function refreshAccountData() {
         accFirst = selectedAccount.substring(0, 5);
         accLast = selectedAccount.slice(-4);
         $("#btn-login").text(accFirst + '...' + accLast);
-        ref = 'https://' + window.location.host + '/?ref=' + selectedAccount
+        ref = 'https://' + window.location.host + '/piggybank/?ref=' + selectedAccount
         $(".form-ref").attr("value", ref);
         $("#btn-logout").removeAttr("style").css({ "display": "inline-block", "padding": "7px 6px", "border": "none", "margin-left": "2px" });
 
